@@ -2,9 +2,18 @@
 import { RouterLink } from 'vue-router'
 
 defineProps({
-  id: Number,
-  title: String,
-  description: String
+  id: {
+    type: Number,
+    required: true
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    default: 'Deskripsi tidak tersedia' // Nilai default jika kosong
+  }
 })
 </script>
 

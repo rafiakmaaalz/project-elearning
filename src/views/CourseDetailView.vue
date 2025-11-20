@@ -4,6 +4,9 @@ import { courses } from '@/db/courses.js'
 
 const route = useRoute()
 const courseId = Number(route.params.id)
+if (isNaN(courseId)) {
+  // Redirect ke 404 atau tampilkan error
+}
 const course = courses.find(c => c.id === courseId)
 </script>
 

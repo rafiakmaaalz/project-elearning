@@ -1,3 +1,10 @@
+<script setup>
+// 1. IMPORT GAMBAR DARI FOLDER ASSETS
+// Pastikan file 'geto.png' dan 'gojo.jpg' SUDAH ADA di folder src/assets/
+import getoImage from '@/assets/geto.png'
+import gojoImage from '@/assets/gojo.jpg'
+</script>
+
 <template>
   <div class="about container">
     <section class="hero-section">
@@ -31,18 +38,21 @@
     <section class="team-section">
       <h2>Tim Kami</h2>
       <div class="team-members">
+
         <div class="member-card">
-          <img src="https://via.placeholder.com/150/f0f0f0/333333?text=Jane+Doe" alt="Jane Doe" class="member-avatar">
+          <img :src="getoImage" alt="Jane Doe" class="member-avatar">
           <h3>Jane Doe</h3>
           <p class="member-role">Pendiri & CEO</p>
           <p class="member-bio">Jane adalah visioner di balik platform ini, dengan pengalaman lebih dari 10 tahun di industri ed-tech.</p>
         </div>
+
         <div class="member-card">
-          <img src="https://via.placeholder.com/150/f0f0f0/333333?text=John+Smith" alt="John Smith" class="member-avatar">
+          <img :src="gojoImage" alt="John Smith" class="member-avatar">
           <h3>John Smith</h3>
           <p class="member-role">Lead Instructor</p>
           <p class="member-bio">John ahli dalam pengembangan web dan telah melatih ribuan siswa untuk menjadi developer handal.</p>
         </div>
+
       </div>
     </section>
 
@@ -50,6 +60,7 @@
 </template>
 
 <style scoped>
+/* Style tetap sama, tidak perlu diubah karena sudah bagus */
 .about {
   line-height: 1.6;
 }
@@ -57,7 +68,7 @@
 .hero-section {
   text-align: center;
   padding: 3rem 0;
-  background-color: #e6f7ff; /* Warna latar belakang lembut */
+  background-color: #e6f7ff;
   border-radius: 10px;
   margin-bottom: 2rem;
 }
@@ -97,9 +108,9 @@ hr {
 
 .team-members {
   display: flex;
-  flex-wrap: wrap; /* Agar bisa wrap ke baris baru di mobile */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem; /* Jarak antar kartu tim */
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -111,8 +122,8 @@ hr {
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform 0.2s ease;
-  width: 100%; /* Default 100% di mobile */
-  max-width: 280px; /* Lebar maksimal kartu */
+  width: 100%;
+  max-width: 280px;
 }
 
 .member-card:hover {
@@ -125,7 +136,7 @@ hr {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 3px solid #007bff; /* Border pada avatar */
+  border: 3px solid #007bff;
 }
 
 .member-card h3 {
@@ -146,7 +157,6 @@ hr {
   text-align: justify;
 }
 
-/* Media Query untuk tata letak tim di layar yang lebih besar */
 @media (max-width: 768px) {
   .hero-section h1 {
     font-size: 2rem;
@@ -158,11 +168,11 @@ hr {
     font-size: 1rem;
   }
   .team-members {
-    flex-direction: column; /* Tumpuk kartu tim di mobile */
+    flex-direction: column;
     align-items: center;
   }
   .member-card {
-    max-width: 90%; /* Ambil lebih banyak ruang di mobile */
+    max-width: 90%;
   }
 }
 </style>
