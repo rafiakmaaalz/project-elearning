@@ -40,15 +40,15 @@ import gojoImage from '@/assets/gojo.jpeg'
       <div class="team-members">
 
         <div class="member-card">
-          <img :src="getoImage" alt="Jane Doe" class="member-avatar">
-          <h3>Jane Doe</h3>
+          <img :src="getoImage" alt="Geto Suguru" class="member-avatar">
+          <h3>Geto Suguru</h3>
           <p class="member-role">Pendiri & CEO</p>
           <p class="member-bio">Jane adalah visioner di balik platform ini, dengan pengalaman lebih dari 10 tahun di industri ed-tech.</p>
         </div>
 
         <div class="member-card">
-          <img :src="gojoImage" alt="John Smith" class="member-avatar">
-          <h3>John Smith</h3>
+          <img :src="gojoImage" alt="Gojo Satoru" class="member-avatar">
+          <h3>Gojo Satoru</h3>
           <p class="member-role">Lead Instructor</p>
           <p class="member-bio">John ahli dalam pengembangan web dan telah melatih ribuan siswa untuk menjadi developer handal.</p>
         </div>
