@@ -2,7 +2,7 @@
 // 1. IMPORT GAMBAR DARI FOLDER ASSETS
 // Pastikan file 'geto.png' dan 'gojo.jpg' SUDAH ADA di folder src/assets/
 import getoImage from '@/assets/geto.png'
-import gojoImage from '@/assets/gojo.jpg'
+import gojoImage from '@/assets/gojo.jpeg'
 </script>
 
 <template>
